@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Home</title>
+  
+  <link rel="stylesheet" href="./src/styles/first_view.css">
+  <link rel="stylesheet" href="./src/styles/main.css">
+  <link rel="stylesheet" href="./src/styles/background_image.css">
+  <link rel="stylesheet" href="./src/styles/footer.css">
+</head>
+
+<body>
+  <!-- Адаптивный Header (all styles => first_view) -->
+  <header class="main-header">
+    <a href="/" class="main-logo"></a>
+    <nav class="buttons">
+      <input type="text" class="search-input" placeholder="Поиск...">
+      
+      <!-- Компьютерная навигация -->
+      <div class="dropdown desktop-only">
+        <button class="btn dropdown-btn">Ссылки</button>
+        <div class="dropdown-content links">
+          <a href="/">Главная</a>
+          <a href="/">О нас</a>
+          <a href="/">Наши услуги</a>
+          <a href="/">Новости</a>
+        </div>
+      </div>
+      <div class="dropdown desktop-only">
+        <button class="btn dropdown-btn">Контакты</button>
+        <div class="dropdown-content contacts">
+          <a href="mailto:example@email.com">example@email.com</a>
+          <a href="tel:+1234567890">+1 (234) 567-890</a>
+          <a href="https://twitter.com">Twitter</a>
+          <a href="https://facebook.com">Facebook</a>
+          <a href="https://instagram.com">Instagram</a>
+        </div>
+      </div>
+      <!-- -->
+      
+      <button class="btn search-btn">Поиск</button>
+      <button class="btn mobile-only">
+        <svg width="100" height="100" viewBox="0 0 100 100" id="hamburger">
+          <path id="top" d="M20 30 H80" stroke="#000" stroke-width="8" stroke-linecap="round" />
+          <path id="middle" d="M20 50 H80" stroke="#000" stroke-width="8" stroke-linecap="round" />
+          <path id="bottom" d="M20 70 H80" stroke="#000" stroke-width="8" stroke-linecap="round" />
+        </svg>
+      </button>
+    </nav>
+    
+    <!-- Мобильное меню -->
+    <div class="menu-container" id="menu">
+      <div class="menu-section">
+        <button class="menu-section-title">Навигация</button>
+        <div class="menu-dropdown">
+          <a href="/">Главная</a>
+          <a href="/">О нас</a>
+          <a href="/">Наши услуги</a>
+          <a href="/">Новости</a>
+        </div>
+      </div>
+      <div class="menu-section">
+        <button class="menu-section-title">Связь</button>
+        <div class="menu-dropdown">
+          <a href="mailto:example@email.com">example@email.com</a>
+          <a href="tel:+1234567890">+1 (234) 567-890</a>
+        </div>
+        <button class="menu-section-title">Социальные сети</button>
+        <div class="menu-dropdown">
+          <a href="https://twitter.com">Twitter</a>
+          <a href="https://facebook.com">Facebook</a>
+          <a href="https://instagram.com">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Адаптивные секции (all styles => main) -->
+  <!-- (Some background images => background_image) -->
+  <main>
+    <!-- Preview -->
+    <section class="hero first">
+      <div class="hero-content">
+        <h1 class="hero-title">О «умных домах»</h1>
+      </div>
+    </section>
+    
+    <!-- "Умный дом вашей мечты" -->
+    <section class="cards second">
+      <div class="card card-image"></div>
+      <div class="card card-content">
+        <h2 class="card-title">Умный дом вашей мечты</h2>
+        <p class="card-description">Создайте идеальное пространство с помощью современных технологий и уюта.</p>
+        <ul class="card-stats">
+          <li>
+            <span class="stat-number">15+</span>
+            <span class="stat-label">Лет опыта</span>
+          </li>
+          <li>
+            <span class="stat-number">500+</span>
+            <span class="stat-label">Проектов</span>
+          </li>
+          <li>
+            <span class="stat-number">98%</span>
+            <span class="stat-label">Довольных клиентов</span>
+          </li>
+        </ul>
+        <button class="card-button">Связаться с нами</button>
+      </div>
+    </section>
+    
+    <!-- "Люди доверяют нам" -->
+    <section class="trust">
+      <h2 class="card-title">Люди доверяют нам</h2>
+      <div class="trust-description">
+        <p>Мы гордимся тем, что за 15 лет работы помогли более 500 семьям по всему миру создать умные дома их мечты.
+          Наша команда профессионалов стремится к тому, чтобы каждый проект был уникальным, отражая индивидуальные
+          потребности и стиль наших клиентов.</p>
+        <p>Наши клиенты ценят нас за внимание к деталям, использование передовых технологий и надёжность. Мы не просто
+          устанавливаем системы — мы создаём пространство, где комфорт, безопасность и энергоэффективность становятся
+          неотъемлемой частью вашей жизни.</p>
+        <p>Доверие наших клиентов — это то, что вдохновляет нас двигаться вперёд. Мы всегда готовы выслушать ваши
+          пожелания, предложить лучшие решения и обеспечить поддержку на каждом этапе — от проектирования до
+          эксплуатации вашего умного дома.</p>
+      </div>
+      <button class="card-button">Связаться с нами</button>
+    </section>
+    
+    <!-- "Кто мы?" -->
+    <section class="cards fourth">
+      <div class="card card-content">
+        <h2 class="card-title">Кто мы?</h2>
+        <ul class="about-us-list">
+          <li class="about-us-item">
+            <div class="about-us-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20ZM12 6V12L16 14L12 6Z"
+                                                                                                                                        fill="#3498db">
+                </path>
+              </svg>
+            </div>
+            <div class="about-us-content">
+              <h3 class="about-us-title">15 лет опыта</h3>
+              <p class="about-us-description">Мы создаём умные дома с 2010 года, обеспечивая комфорт и инновации.</p>
+            </div>
+          </li>
+          <li class="about-us-item">
+            <div class="about-us-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L3 9V21H9V15H15V21H21V9L12 2Z" fill="#3498db"></path>
+              </svg>
+            </div>
+            <div class="about-us-content">
+              <h3 class="about-us-title">500+ проектов</h3>
+              <p class="about-us-description">Мы реализовали более 500 проектов по всему миру.</p>
+            </div>
+          </li>
+          <li class="about-us-item">
+            <div class="about-us-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20ZM16 16L12 12V7H14V11L17 14L16 16Z"
+                                                                                                                                        fill="#3498db">
+                </path>
+              </svg>
+            </div>
+            <div class="about-us-content">
+              <h3 class="about-us-title">Инновации и комфорт</h3>
+              <p class="about-us-description">Наша миссия — сделать ваш дом умнее и уютнее.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="card card-image"></div>
+    </section>
+    
+    <!-- "Узнайте больше об Умном Доме" -->
+    <section class="learn-more">
+      <h2 class="card-title">Узнайте больше об Умном Доме</h2>
+      <ul class="learn-more-list">
+        <li class="learn-more-item">
+          <div class="learn-more-number">24/7</div>
+          <div class="learn-more-label">Доступность</div>
+        </li>
+        <li class="learn-more-item">
+          <div class="learn-more-number">30%</div>
+          <div class="learn-more-label">Экономия энергии</div>
+        </li>
+        <li class="learn-more-item">
+          <div class="learn-more-number">100+</div>
+          <div class="learn-more-label">Устройств</div>
+        </li>
+        <li class="learn-more-item">
+          <div class="learn-more-number">65</div>
+          <div class="learn-more-label">Уникальные идеи</div>
+        </li>
+      </ul>
+    </section>
+    
+    <!-- "Наши услуги" -->
+    <section class="services">
+      <h2 class="card-title">Наши услуги</h2>
+      <p class="section-description">Мы предлагаем полный спектр решений для вашего умного дома.</p>
+      <div class="services-carousel">
+        <button class="carousel-prev carousel-btn" aria-label="Предыдущая карточка">&#10094;</button>
+        <div class="services-list">
+          <div class="service-item">
+            <div class="service-image" style="background-image: url('/src/img/service/individual_design.jpg');"></div>
+            <div class="service-content">
+              <h4 class="service-title">Проектирование</h4>
+              <p class="service-description">Индивидуальный дизайн умного дома под ваши нужды.</p>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="service-image" style="background-image: url('/src/img/service/install.jpg');"></div>
+            <div class="service-content">
+              <h4 class="service-title">Установка</h4>
+              <p class="service-description">Быстрая и надёжная установка всех систем.</p>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="service-image" style="background-image: url('/src/img/service/settings.jpg');"></div>
+            <div class="service-content">
+              <h4 class="service-title">Настройка</h4>
+              <p class="service-description">Персонализация всех устройств и сценариев.</p>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="service-image" style="background-image: url('/src/img/service/support.jpg');"></div>
+            <div class="service-content">
+              <h4 class="service-title">Поддержка</h4>
+              <p class="service-description">Круглосуточная техническая поддержка.</p>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="service-image" style="background-image: url('/src/img/service/modern.jpg');"></div>
+            <div class="service-content">
+              <h4 class="service-title">Модернизация</h4>
+              <p class="service-description">Обновление систем для новых технологий.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-next carousel-btn" aria-label="Следующая карточка">&#10095;</button>
+      </div>
+    </section>
+    
+    <!-- "О Умном Доме" -->
+    <section class="cards sixth">
+      <div class="card card-image"></div>
+      <div class="card card-content">
+        <h2 class="card-title">О Умном Доме</h2>
+        <ul class="smart-home-list">
+          <li class="smart-home-item">
+            <div class="smart-home-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 6L9 17L4 12" stroke="#3498db" stroke-width="2" stroke-linecap="round"
+                                                                                                                                        stroke-linejoin="round">
+                </path>
+              </svg>
+            </div>
+            <div class="smart-home-content">
+              <p class="smart-home-description">Автоматическое управление освещением, климатом и безопасностью.</p>
+            </div>
+          </li>
+          <li class="smart-home-item">
+            <div class="smart-home-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 6L9 17L4 12" stroke="#3498db" stroke-width="2" stroke-linecap="round"
+                                                                                                                                        stroke-linejoin="round">
+                </path>
+              </svg>
+            </div>
+            <div class="smart-home-content">
+              <p class="smart-home-description">Снижение энергопотребления благодаря интеллектуальным системам.</p>
+            </div>
+          </li>
+          <li class="smart-home-item">
+            <div class="smart-home-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 6L9 17L4 12" stroke="#3498db" stroke-width="2" stroke-linecap="round"
+                                                                                                                                        stroke-linejoin="round">
+                </path>
+              </svg>
+            </div>
+            <div class="smart-home-content">
+              <p class="smart-home-description">Контроль дома из любой точки мира через приложение.</p>
+            </div>
+          </li>
+        </ul>
+        <button class="card-button">Связаться с нами</button>
+      </div>
+    </section>
+    
+    <!-- "Наша команда" -->
+    <section class="team">
+      <h2 class="card-title">Наша команда</h2>
+      <p class="section-description">Познакомьтесь с профессионалами, которые делают ваш дом умнее и уютнее.</p>
+      <div class="team-list">
+        <div class="team-member">
+          <div class="member-image" style="background-image: url('/src/img/team/designer.jpg');"></div>
+          <h3 class="member-name">Анна Иванова</h3>
+          <p class="member-position">Ведущий дизайнер</p>
+        </div>
+        <div class="team-member">
+          <div class="member-image" style="background-image: url('/src/img/team/engineer.jpg');"></div>
+          <h3 class="member-name">Игорь Петров</h3>
+          <p class="member-position">Инженер по автоматизации</p>
+        </div>
+        <div class="team-member">
+          <div class="member-image" style="background-image: url('/src/img/team/manager.jpg');"></div>
+          <h3 class="member-name">Павел Грачев</h3>
+          <p class="member-position">Менеджер проектов</p>
+        </div>
+        <div class="team-member">
+          <div class="member-image" style="background-image: url('/src/img/team/security.jpg');"></div>
+          <h3 class="member-name">Максим Козлов</h3>
+          <p class="member-position">Специалист по безопасности</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- "Проект «Создать умный дом»" -->
+    <section class="cards eigth">
+      <div class="card card-content">
+        <h2 class="card-title">Проект «Создать умный дом»</h2>
+        <p class="section-description">Оставьте заявку, и мы свяжемся с вами, чтобы обсудить ваш проект умного дома.</p>
+        <form class="project-form">
+          <input type="text" name="name" placeholder="Ваше имя" class="form-input" required="">
+          <input type="email" name="email" placeholder="Ваш email" class="form-input" required="">
+          <textarea name="message" placeholder="Ваше сообщение" class="form-textarea" required=""></textarea>
+          <button type="submit" class="form-button">Отправить заявку</button>
+        </form>
+      </div>
+      <div class="card card-image"></div>
+    </section>
+  </main>
+  
+  <!-- Адаптивный Footer (all styles => footer) -->
+  <footer class="footer">
+    <div class="footer-block footer-cta">
+      <div class="footer-cta-content">
+        <h2 class="footer-title">Готовы начать?</h2>
+        <p class="footer-description">Свяжитесь с нами, чтобы узнать, как умный дом может изменить вашу жизнь.</p>
+      </div>
+      <button class="card-button">Связаться</button>
+    </div>
+    <hr />
+    <div class="footer-block footer-links">
+      <div class="footer-links-item">
+        <div>
+          <div class="main-logo"></div>
+        </div>
+        <p class="footer-description">
+          Мы предлагаем полностью настраиваемые решения, отвечающие индивидуальным потребностям.
+        </p>
+        <address class="footer-description footer-info-line">
+          <img src="/src/img/icons/location_point.png" alt="location">
+          <span>7507 Dewey Route, East Darrylville, ME 36932, Соединенные Штаты</span>
+        </address>
+        <div class="soc">
+          <a href="https://facebook.com/name">
+            <img src="/src/img/icons/facebook.png" alt="facebook">
+          </a>
+          <a href="https://twitter.com/name">
+            <img src="/src/img/icons/twitter.png" alt="X">
+          </a>
+          <a href="https://instagram.com/name">
+            <img src="/src/img/icons/instagram.png" alt="Instagram">
+          </a>
+        </div>
+      </div>
+      <div class="footer-links-item">
+        <h3 class="footer-links-title">Нужна помощь?</h3>
+        <div class="footer-info-line">
+          <img src="/src/img/icons/phone.png" alt="phone call">
+          <a href="tel:+18001234567" class="text-big">+1-800-123-4567</a>
+        </div>
+        <div class="footer-info">
+          <p><span>Понедельник – пятница: 9:00-20:00</span></p>
+          <p><span>Суббота: 11:00 – 15:00 </span></p>
+        </div>
+        <hr />
+        <p class="footer-info-line">
+          <img src="/src/img/icons/mail.png" alt="mail">
+          <a href="mailto:roofing@support.com" class="text-middle">smarthome@support.com</a>
+        </p>
+      </div>
+      <div class="footer-links-item">
+        <h3 class="footer-links-title">Быстрые ссылки</h3>
+        <ul>
+          <li><a href="/">О компании</a></li>
+          <li><a href="/">Наши услуги</a></li>
+          <li><a href="/">Блог</a></li>
+          <li><a href="/">Отзывы</a></li>
+          <li><a href="/">Бренды</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-block footer-uncopy">
+      <p>Мы с 2010г</p>
+    </div>
+  </footer>
+  
+  <script type="module" src="./src/script/main.ts"></script>
+</body>
+
+</html>
