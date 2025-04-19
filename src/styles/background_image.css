@@ -1,19 +1,19 @@
 /* Умный дом вашей мечты */
 .second .card-image {
-  background-image: url('../img/smart.jpg');
+  background-image: url('../img/smart.webp');
 }
 
 /* Кто мы? */
 .fourth .card-image {
-  background-image: url('../img/cheerful-man-showing-draft-woman.jpg');
+  background-image: url('../img/cheerful-man-showing-draft-woman.webp');
 }
 
 /* О Умном Доме */
 .sixth .card-image {
-  background-image: url('../img/home-climate-control-system-1.jpg');
+  background-image: url('../img/home-climate-control-system-1.webp');
 }
 
 /* Проект «Создать умный дом» */
 .eigth .card-image {
-  background-image: url('../img/digital-tablet-screen-with-smart-home-controller.jpg');
+  background-image: url('../img/digital-tablet-screen-with-smart-home-controller.webp');
 }
