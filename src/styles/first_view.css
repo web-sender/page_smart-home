@@ -109,7 +109,7 @@ span {
 .main-logo {
   height: 3rem;
   aspect-ratio: 1 / 1;
-  background-image: url('../img/main-logo.jpg');
+  background-image: url('../img/main-logo.webp');
   background-size: cover;
   background-position: center;
   transition: transform .1s ease;
@@ -376,7 +376,7 @@ span {
 
 /* Первая секция с фоном и заголовком (Preview) */
 .hero {
-  background-image: url('../img/main.jpg');
+  background-image: url('../img/main.webp');
   /* Пример изображения */
   background-size: cover;
   background-position: center;
