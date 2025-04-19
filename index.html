@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Home</title>
+  
+  <script type="module" crossorigin src="/page_smart-home/assets/index-C3XTp88b.js"></script>
+  <link rel="stylesheet" crossorigin href="/page_smart-home/assets/index-D9phTo5J.css">
+</head>
+
+<body>
+  <!-- Адаптивный Header (all styles => first_view) -->
+  <header class="main-header">
+    <a href="/" class="main-logo"></a>
+    <nav class="buttons">
+      <input type="text" class="search-input" placeholder="Поиск...">
+      
+      <!-- Компьютерная навигация -->
+      <div class="dropdown desktop-only">
+        <button class="btn dropdown-btn">Ссылки</button>
+        <div class="dropdown-content links">
+          <a href="/">Главная</a>
+          <a href="/">О нас</a>
+          <a href="/">Наши услуги</a>
+          <a href="/">Новости</a>
+        </div>
+      </div>
+      <div class="dropdown desktop-only">
+        <button class="btn dropdown-btn">Контакты</button>
+        <div class="dropdown-content contacts">
+          <a href="mailto:example@email.com">example@email.com</a>
+          <a href="tel:+1234567890">+1 (234) 567-890</a>
+          <a href="https://twitter.com">Twitter</a>
+          <a href="https://facebook.com">Facebook</a>
+          <a href="https://instagram.com">Instagram</a>
+        </div>
+      </div>
+      <!-- -->
+      
+      <button class="btn search-btn">Поиск</button>
+      <button class="btn mobile-only">
+        <svg width="100" height="100" viewBox="0 0 100 100" id="hamburger">
+          <path id="top" d="M20 30 H80" stroke="#000" stroke-width="8" stroke-linecap="round" />
+          <path id="middle" d="M20 50 H80" stroke="#000" stroke-width="8" stroke-linecap="round" />
+          <path id="bottom" d="M20 70 H80" stroke="#000" stroke-width="8" stroke-linecap="round" />
+        </svg>
+      </button>
+    </nav>
+    
+    <!-- Мобильное меню -->
+    <div class="menu-container" id="menu">
+      <div class="menu-section">
+        <button class="menu-section-title">Навигация</button>
+        <div class="menu-dropdown">
+          <a href="/">Главная</a>
+          <a href="/">О нас</a>
+          <a href="/">Наши услуги</a>
+          <a href="/">Новости</a>
+        </div>
+      </div>
+      <div class="menu-section">
+        <button class="menu-section-title">Связь</button>
+        <div class="menu-dropdown">
+          <a href="mailto:example@email.com">example@email.com</a>
+          <a href="tel:+1234567890">+1 (234) 567-890</a>
+        </div>
+        <button class="menu-section-title">Социальные сети</button>
+        <div class="menu-dropdown">
+          <a href="https://twitter.com">Twitter</a>
+          <a href="https://facebook.com">Facebook</a>
+          <a href="https://instagram.com">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Адаптивные секции (all styles => main) -->
+  <!-- (Some background images => background_image) -->
+  <main>
+    <!-- Preview -->
+    <section class="hero first">
+      <div class="hero-content">
+        <h1 class="hero-title">О «умных домах»</h1>
+      </div>
+    </section>
+    
+    <!-- "Умный дом вашей мечты" -->
+    <section class="cards second">
+      <div class="card card-image"></div>
+      <div class="card card-content">
+        <h2 class="card-title">Умный дом вашей мечты</h2>
+        <p class="card-description">Создайте идеальное пространство с помощью современных технологий и уюта.</p>
+        <ul class="card-stats">
+          <li>
+            <span class="stat-number">15+</span>
+            <span class="stat-label">Лет опыта</span>
+          </li>
+          <li>
+            <span class="stat-number">500+</span>
+            <span class="stat-label">Проектов</span>
+          </li>
+          <li>
+            <span class="stat-number">98%</span>
+            <span class="stat-label">Довольных клиентов</span>
+          </li>
+        </ul>
+        <button class="card-button">Связаться с нами</button>
+      </div>
+    </section>
+    
+    <!-- "Люди доверяют нам" -->
+    <section class="trust">
+      <h2 class="card-title">Люди доверяют нам</h2>
+      <div class="trust-description">
+        <p>Мы гордимся тем, что за 15 лет работы помогли более 500 семьям по всему миру создать умные дома их мечты.
+          Наша команда профессионалов стремится к тому, чтобы каждый проект был уникальным, отражая индивидуальные
+          потребности и стиль наших клиентов.</p>
+        <p>Наши клиенты ценят нас за внимание к деталям, использование передовых технологий и надёжность. Мы не просто
+          устанавливаем системы — мы создаём пространство, где комфорт, безопасность и энергоэффективность становятся
+          неотъемлемой частью вашей жизни.</p>
+        <p>Доверие наших клиентов — это то, что вдохновляет нас двигаться вперёд. Мы всегда готовы выслушать ваши
+          пожелания, предложить лучшие решения и обеспечить поддержку на каждом этапе — от проектирования до
+          эксплуатации вашего умного дома.</p>
+      </div>
+      <button class="card-button">Связаться с нами</button>
+    </section>
+    
+    <!-- "Кто мы?" -->
+    <section class="cards fourth">
+      <div class="card card-content">
+        <h2 class="card-title">Кто мы?</h2>
+        <ul class="about-us-list">
+          <li class="about-us-item">
+            <div class="about-us-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20ZM12 6V12L16 14L12 6Z"
+                                                                                                                                        fill="#3498db">
+                </path>
+              </svg>
+            </div>
+            <div class="about-us-content">
+              <h3 class="about-us-title">15 лет опыта</h3>
+              <p class="about-us-description">Мы создаём умные дома с 2010 года, обеспечивая комфорт и инновации.</p>
+            </div>
+          </li>
+          <li class="about-us-item">
+            <div class="about-us-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L3 9V21H9V15H15V21H21V9L12 2Z" fill="#3498db"></path>
+              </svg>
+            </div>
+            <div class="about-us-content">
+              <h3 class="about-us-title">500+ проектов</h3>
+              <p class="about-us-description">Мы реализовали более 500 проектов по всему миру.</p>
+            </div>
+          </li>
+          <li class="about-us-item">
+            <div class="about-us-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20ZM16 16L12 12V7H14V11L17 14L16 16Z"
+                                                                                                                                        fill="#3498db">
+                </path>
+              </svg>
+            </div>
+            <div class="about-us-content">
+              <h3 class="about-us-title">Инновации и комфорт</h3>
+              <p class="about-us-description">Наша миссия — сделать ваш дом умнее и уютнее.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="card card-image"></div>
+    </section>
+    
+    <!-- "Узнайте больше об Умном Доме" -->
+    <section class="learn-more">
+      <h2 class="card-title">Узнайте больше об Умном Доме</h2>
+      <ul class="learn-more-list">
+        <li class="learn-more-item">
+          <div class="learn-more-number">24/7</div>
+          <div class="learn-more-label">Доступность</div>
+        </li>
+        <li class="learn-more-item">
+          <div class="learn-more-number">30%</div>
+          <div class="learn-more-label">Экономия энергии</div>
+        </li>
+        <li class="learn-more-item">
+          <div class="learn-more-number">100+</div>
+          <div class="learn-more-label">Устройств</div>
+        </li>
+        <li class="learn-more-item">
+          <div class="learn-more-number">65</div>
+          <div class="learn-more-label">Уникальные идеи</div>
+        </li>
+      </ul>
+    </section>
+    
+    <!-- "Наши услуги" -->
+    <section class="services">
+      <h2 class="card-title">Наши услуги</h2>
+      <p class="section-description">Мы предлагаем полный спектр решений для вашего умного дома.</p>
+      <div class="services-carousel">
+        <button class="carousel-prev carousel-btn" aria-label="Предыдущая карточка">&#10094;</button>
+        <div class="services-list">
+          <div class="service-item">
+            <div class="service-image" style="background-image: url('/page_smart-home/assets/individual_design-_LVuAI4a.webp');"></div>
+            <div class="service-content">
+              <h4 class="service-title">Проектирование</h4>
+              <p class="service-description">Индивидуальный дизайн умного дома под ваши нужды.</p>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="service-image" style="background-image: url('/page_smart-home/assets/install-DL-aL6D6.webp');"></div>
+            <div class="service-content">
+              <h4 class="service-title">Установка</h4>
+              <p class="service-description">Быстрая и надёжная установка всех систем.</p>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="service-image" style="background-image: url('/page_smart-home/assets/settings-CaihHS0Y.webp');"></div>
+            <div class="service-content">
+              <h4 class="service-title">Настройка</h4>
+              <p class="service-description">Персонализация всех устройств и сценариев.</p>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="service-image" style="background-image: url('/page_smart-home/assets/support-Do6N2xGh.webp');"></div>
+            <div class="service-content">
+              <h4 class="service-title">Поддержка</h4>
+              <p class="service-description">Круглосуточная техническая поддержка.</p>
+            </div>
+          </div>
+          <div class="service-item">
+            <div class="service-image" style="background-image: url('/page_smart-home/assets/modern-BVO9BkrQ.webp');"></div>
+            <div class="service-content">
+              <h4 class="service-title">Модернизация</h4>
+              <p class="service-description">Обновление систем для новых технологий.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-next carousel-btn" aria-label="Следующая карточка">&#10095;</button>
+      </div>
+    </section>
+    
+    <!-- "О Умном Доме" -->
+    <section class="cards sixth">
+      <div class="card card-image"></div>
+      <div class="card card-content">
+        <h2 class="card-title">О Умном Доме</h2>
+        <ul class="smart-home-list">
+          <li class="smart-home-item">
+            <div class="smart-home-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 6L9 17L4 12" stroke="#3498db" stroke-width="2" stroke-linecap="round"
+                                                                                                                                        stroke-linejoin="round">
+                </path>
+              </svg>
+            </div>
+            <div class="smart-home-content">
+              <p class="smart-home-description">Автоматическое управление освещением, климатом и безопасностью.</p>
+            </div>
+          </li>
+          <li class="smart-home-item">
+            <div class="smart-home-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 6L9 17L4 12" stroke="#3498db" stroke-width="2" stroke-linecap="round"
+                                                                                                                                        stroke-linejoin="round">
+                </path>
+              </svg>
+            </div>
+            <div class="smart-home-content">
+              <p class="smart-home-description">Снижение энергопотребления благодаря интеллектуальным системам.</p>
+            </div>
+          </li>
+          <li class="smart-home-item">
+            <div class="smart-home-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 6L9 17L4 12" stroke="#3498db" stroke-width="2" stroke-linecap="round"
+                                                                                                                                        stroke-linejoin="round">
+                </path>
+              </svg>
+            </div>
+            <div class="smart-home-content">
+              <p class="smart-home-description">Контроль дома из любой точки мира через приложение.</p>
+            </div>
+          </li>
+        </ul>
+        <button class="card-button">Связаться с нами</button>
+      </div>
+    </section>
+    
+    <!-- "Наша команда" -->
+    <section class="team">
+      <h2 class="card-title">Наша команда</h2>
+      <p class="section-description">Познакомьтесь с профессионалами, которые делают ваш дом умнее и уютнее.</p>
+      <div class="team-list">
+        <div class="team-member">
+          <div class="member-image" style="background-image: url('/page_smart-home/assets/designer-Benwvspy.webp');"></div>
+          <h3 class="member-name">Анна Иванова</h3>
+          <p class="member-position">Ведущий дизайнер</p>
+        </div>
+        <div class="team-member">
+          <div class="member-image" style="background-image: url('/page_smart-home/assets/engineer-MOqSS19m.webp');"></div>
+          <h3 class="member-name">Игорь Петров</h3>
+          <p class="member-position">Инженер по автоматизации</p>
+        </div>
+        <div class="team-member">
+          <div class="member-image" style="background-image: url('/page_smart-home/assets/manager-DAaiX30e.webp');"></div>
+          <h3 class="member-name">Павел Грачев</h3>
+          <p class="member-position">Менеджер проектов</p>
+        </div>
+        <div class="team-member">
+          <div class="member-image" style="background-image: url('/page_smart-home/assets/security-BEWoHUOL.webp');"></div>
+          <h3 class="member-name">Максим Козлов</h3>
+          <p class="member-position">Специалист по безопасности</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- "Проект «Создать умный дом»" -->
+    <section class="cards eigth">
+      <div class="card card-content">
+        <h2 class="card-title">Проект «Создать умный дом»</h2>
+        <p class="section-description">Оставьте заявку, и мы свяжемся с вами, чтобы обсудить ваш проект умного дома.</p>
+        <form class="project-form">
+          <input type="text" name="name" placeholder="Ваше имя" class="form-input" required="">
+          <input type="email" name="email" placeholder="Ваш email" class="form-input" required="">
+          <textarea name="message" placeholder="Ваше сообщение" class="form-textarea" required=""></textarea>
+          <button type="submit" class="form-button">Отправить заявку</button>
+        </form>
+      </div>
+      <div class="card card-image"></div>
+    </section>
+  </main>
+  
+  <!-- Адаптивный Footer (all styles => footer) -->
+  <footer class="footer">
+    <div class="footer-block footer-cta">
+      <div class="footer-cta-content">
+        <h2 class="footer-title">Готовы начать?</h2>
+        <p class="footer-description">Свяжитесь с нами, чтобы узнать, как умный дом может изменить вашу жизнь.</p>
+      </div>
+      <button class="card-button">Связаться</button>
+    </div>
+    <hr />
+    <div class="footer-block footer-links">
+      <div class="footer-links-item">
+        <div>
+          <div class="main-logo"></div>
+        </div>
+        <p class="footer-description">
+          Мы предлагаем полностью настраиваемые решения, отвечающие индивидуальным потребностям.
+        </p>
+        <address class="footer-description footer-info-line">
+          <img src="data:image/webp;base64,UklGRuoCAABXRUJQVlA4WAoAAAAQAAAALwAALwAAQUxQSJYCAAABkC0AkCE5NbtzwSG283R2bNu2zUVs27Zt23my7czEXEV7O1NBT9XsH0TEBAA7tJh9+z03IqL73k5niTAIrjV62JH3GhK1D8eGR1vMs8bMUnVk68r0KItJOUerOpqqvxqRwwypwmkNTQ+cqiCx5BYqBlVtITNkhwuD7Book2SHF4PudciUli7kaj9/ahx0tSBUVJHuOT+pbeUq7Sad89BQKWuQ8xSSPaurRoAwvMpqDwmP5hBIY3TSo5YhQAxp8ZCkjRDEKki9lgLMlGsUfBkNAJZZSH2UCuzURxScIQHEKBRvGzCxjY/yKgZgGFLXpzOwZMhgMUi/lYIDIfQI5XttEMq115w9s6yCRQD1f1COhBV7R7mUVWDp8RUR8U0jUdZLlPcl7AHKAhBW/IjC5wkCWEDRnNuR2k80Cw0don4U3HGXoncQWLcZLRZ10in3XBTsIpDWG80W9UCqG8lOAQwzCLQXDSMxV4qKXhGdyiWQ1pl3N78Aki+kIfqPRIKw8CPzAp1EkLulbWDjrCAeoNNcJDyVRUTPdhHJrrs0f3czeqXR7m6j4fV8vPw3kL7NFqBpdp5TowVsxd7R8HkcJ/EF0t8VCz3MwAVWmrwCmQdDYRjnSzVarW+cAQAxCgPPZqNkP49MJQZAmsnxD6TY0zgzJQCIVRiopBqVVJGpxAIASGN0Bu6MEEXsQ6Y+WvoPcp7k+MeF/Bcy1s85lhPEFVUG+oaEAYQP8iFTLQfGLV0M/L0pPnH7L2S6WgJRtnkYiG/eItdjkykgO1wcvssmA11uoQZHbSkDVyp7XDNPO15OAhNzjlZ1c3R1TE4w1xozS9V5ujozxgqmW6P7H3wfoATeHxoQbYXghhazbb/r+s91d7utWCiwAVZQOCAuAAAAMAMAnQEqMAAwAD5tNphJJCMioSOIAIANiWkAABuBvT4OAAD++52LPIlxfwgAAA==" alt="location">
+          <span>7507 Dewey Route, East Darrylville, ME 36932, Соединенные Штаты</span>
+        </address>
+        <div class="soc">
+          <a href="https://facebook.com/name">
+            <img src="data:image/webp;base64,UklGRjoCAABXRUJQVlA4WAoAAAAQAAAALwAALwAAQUxQSOkBAAABkKtt29o2r6y/U2gqM4O0ypMddezK3M7cGqbwCZTpBNDZMjGPXQMj/xrCMVxXWPqC+j/9RxAREwDlMiedG84TEeVHmjPxMkRrWrXtMz6F9Gfaay2Tz7Q+eqQeeB8tk+lgk0fMXtNBDsPt8Ynd73ENJXFfUqTyvlAQ2QJFXEiJUCJboshLGRHmfp40zN8P4Upi3FjevRGGZHKfQ92kPlh303Vdt7olFHUc2sNoCtQGrmDvn+GCJmOXLUl5PgEekjaA2CdS7y7joo8xwJYM7wGg0rnuVreoSAuoJcZXAA58K64sL2+oUAplbRwvAJwYJdbWsvg013mPZ9pJ+3ptpptJeeD5SwtA1bOXL55nJ5UoN6z2E2FPjKkN56O5Nq2Wp2hurKpx/jp5qhyAOH7q1LEa0rE0OfUEwOn/U5MTi1oQ0QsA5z1izuu2NKzbUE63XNrXazMdn9Zr2ilr06u1DLV6pQBb6iRtIPZRp48xAPaUPlM2ABiNgS5Bo7ELB7uVPibc5KM5hvaD2NuVKuvLy8srgZpMYv/7eQXm/H2EFKlidMWUCAORyUeVTwmEF/dkNPK+gKqR6PT5/I6EAcaDTR6XbDwIXtP64DEE3kfLBLt5LdU6sxnGn2lNWSaiLXNSueH8rvxIc9opgzIAVlA4ICoAAAAwAwCdASowADAAPm02mEikIyKhI4gAgA2JaQAAG4G9Pg4AAP77nMAAAAA=" alt="facebook">
+          </a>
+          <a href="https://twitter.com/name">
+            <img src="data:image/webp;base64,UklGRh4EAABXRUJQVlA4WAoAAAAQAAAAPwAAPwAAQUxQSJ4BAAABkFvbtmo3+z5BxJhTAdwHS2a2U2HIylgVmKkAWwWYGT9kghAf2JHwHfG79+wGImICYL2qc+zlj+VgdzdY/vFitKMKulvmU7EkjFNzzWqKhrJiOTNUqKFsIhCHwXipK3NtQxz7vZ6Tug+i8H2tg7ZQVP6/YMtbELVznpX8F6L4eZ6F/EVR/TovkXksyl94SRZE/UyCLiG8eK7aiCGqOYf5IJRvzVl3hPT6GWWbLOslp00K7egpRQGPX3hiSIgHTqSYMgBahLoBmOeaAdJcv1AVc8UVnULePs428pLt2Xe2r6tsyz7b5g7bNp/PtrnKtvyd7esLtqdjbMMdbG1VMddBBVJcP4F5rmmgmaseQIopAwBDTAMnCgMev/AEJnhGcGrpBsta8Wm4xXIVZ5r3HG/MWaiNGMIanLeToR3nn9M3hYTmobbnXhLkLep6lYfkufc1Pc2DTTOjJp4ysNwa6PjXDfs1bzW8qYZLc23dlX/PwHHJqO9ia6QYCgsG0rZS/QXQ2jDz+yDJwa/peuiuaB9+/m3J39nxl749G26rgHVWUDggWgIAABAPAJ0BKkAAQAA+bTCRRyQioaEoGA6ogA2JaQAW1uykqwvUMsN9SvzOcp3QiIDVNeIGOf/yX65+Z38p/tv/R9wP9Sf+N6snrP/VX2Hv13Q9EjQLopVHXIuacXm5fm8ZQpeBf/pEJLW6aH8r8iRQoO+/1EiAjXTL9OYhYsfQDIcOQAD+/9WYT4vXn/8X/sODnFH6rDI+1kQEhsXJu0rlGu5vRpj6yc1TIHlP+1pXxn6vl8/zvZ/yU38ZlClRZ4GlUtdmqn9HtGrfriOqWcX203t/+OANoM8k3oVtT/v2fBGjd1QnSxeOHX61BBrH9k+mU04eYm9vQj+uGHPwREUbohx1asAsrPgH+m5cNEUnCPqT6ttLU+7k7Lw+rJC8/yJAuqIuEhXf/mELNgzljWya0xzs45hQ7GGhvzC+eoYu4AskGZzk9S9xaGJXh/8GCjs3q7f/Sp6LKeR31pwG1/vqZ2aIJse0KVHNGjsLSwVg9sxDqmepmtt9mH9i0tm5QmgfiXli2+GxI2i5O+TjHOPrLv/jGto3+H4/GMxe9TIji6VP9gv/vIgIAOhjZ0/cN0t57ETbLNuKRrIJCl4nXfMXnO3U1PhZLNNJf0rqQCoCg1/FOSMB2AQ5hGrONoNabDnBEUhUvqWuiwwRu+7BL1OP7ir5Bhid9dkoc6LI/+d5sAhs3pWw2yUVCJ31s+z4y61HljNWCSe//So//+RpU9+Mx7wFWRmovKjXubYli6iWoazQsl6ZjDA1Mj037lrO8fj1u/4QiW/3YrgYUeCf3nnf41tBjLTVM6LcAAAA" alt="X">
+          </a>
+          <a href="https://instagram.com/name">
+            <img src="data:image/webp;base64,UklGRgYEAABXRUJQVlA4WAoAAAAQAAAAPwAAPwAAQUxQSLEDAAABoLz//yE5XtO7erRsDK/B4Bre1riP1zbDo3MzzrZt206G6z0Nuzp20t+g6vv71S8R4cBtJEVKbulgsWHuC1hbWj9+xbl/M/fvZ/49t3xcXSluHTqjKSsGs03ThzgjPrpVLG0Z/aoLCidmJIKZCamoeJ/3SET9YbFIlB8TBx7tH4GaK+LE6x/aEpspzpwesyJ/uTh0WZ7NtE2cutX88haJY5fHTMwU50410CDPwY/0eLtm5GbLvj07Vz914aJnv9uzZ3/rLSNX+2lfMoXrpd8tQ7N82CXRPeyF+UZU0g1ehKxqTIvqF+FU7VVp17/hpZ7qodm/XaU7GWSSnpflQOLXzc3+A1F94Ddv+jUB9NHzehwA8YxKA1BnXTkydUCjfpGvAozW9+ZBXVaszdZBTN/ZSIAmld8gYbs+Jl51TDIJGKZXQmCoqJTDr5bTEaBK5FcoF9WBMEPlBrBZj6Ht8+dvTz9jLZAQ2QTcNGVPs/E+NCsceDcHIOfdgyI3qmCsSBPQpnKB0qzKPuBqiDufofjFHbmx+qiIXAX2qTwqrheVHcCd0PQaACUlALwePhtgh6jWTtDZAjwI8ilQNrtHpHtWKfBFKH6BrTpjV+hsALIBDgJDuiRg52DlbmWBjTpLz+qshRwJ8A6UhSaRzlJ4TwLmwFqd0//rrISC4FFzYbYozoSc3gD5sErnX99wF+DlANvA69bo8sKP62VYptN7T2cRxAPMgRJRLYK5AeKwSOeuLXOhWKcQ5tniaKMzyoajr8yA3LTtVww7WqfvqLQzTEdJlB0t19moxO0hYHBnaBoE7LeN2yXjDe1Uy5vPgdKZXSJdM0qAL63zZkydzk6LvC0ujpq3NYa6sV+vG1+g+FVokisWdYMmlTZD3Tr0Xi5A7vuHJWwT0K5y3lQ3b1rVzR2+8cHeVJkCQxzUbZVfoEJUBoBh83eI+1HIJGG4Xqed960aiF02961X9UbVGKlvpmuAj/UTeQWAiRZ9+5dNzWlT3043b/olDvTt1YsuAVI99uOG3NRTc9Es1/fclQiHpeHuNHpYG/vYcEc/J4R31DRuGlZuR8Wwy6J7SLu+/lfF5K3W/aFx28Jnv9u5Z5/FuO1KXzTr5TlYi+5090w2DukWuGZZDJN529yyJQ+zufNcssRmAm+qM7KTPSytzrjhWiP29jvsgkN9I/5v7I6K/71HRJPj/CikxyZw4Csjm21pGvEKrhw49eIjE48uTBmAW4trxyw7849/757/z5mlY2qKsRUAVlA4IC4AAACQAwCdASpAAEAAPm02mEkkIyKhIggAgA2JaQAAEDdTUAV4hbkAAP77nMAAAAAA" alt="Instagram">
+          </a>
+        </div>
+      </div>
+      <div class="footer-links-item">
+        <h3 class="footer-links-title">Нужна помощь?</h3>
+        <div class="footer-info-line">
+          <img src="data:image/webp;base64,UklGRngDAABXRUJQVlA4WAoAAAAQAAAALwAALwAAQUxQSCcDAAABkDBb2xnJQ3qTHntmbdu2bdv2bnrWtm3btm3b1ng1qNp2v1WZ73u/Lx0RDNw2UpQcM8zM7htAaGA5875Xiaib+Hp/ZPlAMKapiHYm3oWErvgzWhGTkaUlUSjWHbVUeiHd1CiUNGpqOhmUquddKK3rQlVFiFeHn2jInx28RKOWiAZNGuklGJPRsMkaOXRIRA+Y2IGgmsQZtmObrn23C0+owd/1HPdwJ7XRL1liioJP9jZrP7rp4RJ7U2Wqm+HP2CCAih8ZnLdWDqmcRsk1P5YOmanM/Yr+ZMeuKgBAG+4TOixJ7xfmVyvdpjcV1VGXMM9gH8WMYJrgSOVv9yrd1737PDQwz2VyWKwS83eZgTX8fCr/uuaIULLO/b0muMBjclYEQEOGa/7AWTkGdS1xb5cVVVt+X+dT7zc1TIDAMyxPIogIXsLE6uvnlm/dTB1i+ygLKM4Glo/jAq0W8HZz68SXCqpz4ndbdcn7PAWiCOLKmfls2OrFY0Yd68ZmIaEb3uctGDNN3UPgNO9DjoRKLGrDN1zYnMqV9/sEr9O3/LtRGbbvFfKuZ9JX6RGPvNNNJ08oE/4WLZRA8CqRIKFqKpnfIcE6WP8mrK2lRQT1MnRCHAnSSfuM4nHbu1FZaloHel9HOf93AQCYjZR2TO41Cwd6XUNJ3xXRKfgVaS021MKfoqw7AwEUsw1Fvj1upUiksY9VAQLWoxH/vULav60BIMMBN5do0Z+tQl7uQ4Hf6wNAps0WhlNFs3a+5hCwz+wSDa8rAoD/oDd2xPv5ACDN7D8kTrMe5yLfVwMAJXO3DauLsYnb/B1FXLnAMyj0U0uFCUgFOEvfJfMINBQbP9gPBBZ+TuUpFP0pE2DrsoiGMWShUZegjDcaeNFM4FiiAkDRH3LxMD8HRd4XLD+K8nVSRvcbLR1H0B7uUaYobB0+j3I67o3Ip+oETLHydZiq85K6v61qmDP/Aitf5z3Sjvz/EeuUaEfAKzIFDZsS6eXZdjBRMAJ4tfdwOwugVL9spB2/XEPxaD/h55R00v2QxUb6IdIL48/FOel+zrkJwiWZfpRG9aPM5QJBJAAAVlA4ICoAAAAwAwCdASowADAAPm02mEikIyKhI4gAgA2JaQAAG4G9Pg4AAP77nMAAAAA=" alt="phone call">
+          <a href="tel:+18001234567" class="text-big">+1-800-123-4567</a>
+        </div>
+        <div class="footer-info">
+          <p><span>Понедельник – пятница: 9:00-20:00</span></p>
+          <p><span>Суббота: 11:00 – 15:00 </span></p>
+        </div>
+        <hr />
+        <p class="footer-info-line">
+          <img src="data:image/webp;base64,UklGRqICAABXRUJQVlA4WAoAAAAQAAAALwAALwAAQUxQSI8BAAABCsnWthmSFFlt2zbGtm3PrGzb9qxse2lfgm3bNsrOiH9u4MuIiJgA/P+mhBp9Jq7cgBUT+1RPMAkz0rtvvvLF6vCqPl/Z1CXNJEIrW3bnr0PnHywr1bhlLX3s4CqXgE9A+wt2gzPOtwvgEDnvk0OgnBehK3mz2SHUvClRR/QOu0MwZLRfYWuthnAlQ/3Qxv4xCKqx8NX0rYOkbOwj5rSD6El4G2WmYh7pJfWqg+wVePSz0DH3BRBx2kH4VDhD3c+UVB1gukF6NEx7ae3Q4s7QknElz2ihuPk3WrJZ25+00LbLb1qyc4dftH61b/OTFlSNd7TeVk+/SetmeshxWsdC2Apa84EeZkr/ujBk3KZ0KwPAckrLAaDaWzqymkfQTjoI8kDlJ1RkZXifZqWhJjOfcYdoHJS+UHiFwmXJ/G14R9zNBsz/to9EPWrJ9Na6IEaC6S/Y8Zffn235jGf44Ns2PlCDwhlfLXvOfZs+yBnZGuOu5Q079NLij1QHhuVpTGxY5dH7r332UNf2jZKhTDcAVlA4IOwAAADwBgCdASowADAAPm0wlEckIqIhI434gA2JaQAW2KGX9AD9P/9kc9jLojOtjaY0FwZ9e30L45Bg5fYBYcW+AwGAAP788LX7XTysSUw0jgn/t//g2z+5/Wo6NJDuZ+Hv/oa/u/gjob/gOXqMfPvHq5poRcZ75VyKzAMv30pky3hPS6hMJWI2AjX/2Dfet5DHQSvQRzYxuX4lTKvhp5J8v1hZEa31Eol/O5+UpFNpI/n//xN2yxv+N7wRWiEUfRn//4cnEkf/8cfC30fWLN/AVPYKE/FT/ozrOe7H7/obtr7PwBUuORy2+L59pAAAAA==" alt="mail">
+          <a href="mailto:roofing@support.com" class="text-middle">smarthome@support.com</a>
+        </p>
+      </div>
+      <div class="footer-links-item">
+        <h3 class="footer-links-title">Быстрые ссылки</h3>
+        <ul>
+          <li><a href="/">О компании</a></li>
+          <li><a href="/">Наши услуги</a></li>
+          <li><a href="/">Блог</a></li>
+          <li><a href="/">Отзывы</a></li>
+          <li><a href="/">Бренды</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-block footer-uncopy">
+      <p>Мы с 2010г</p>
+    </div>
+  </footer>
+  
+</body>
+
+</html>
