@@ -17,6 +17,9 @@ jobs:
         with:
           node-version: '23' # Укажите вашу версию Node.js
 
+      - name: Clear npm cache
+        run: npm cache clean --force
+
       - name: Install dependencies
         run: npm install
 
