@@ -1,0 +1,19 @@
+/* Умный дом вашей мечты */
+.second .card-image {
+  background-image: url('../img/smart.jpg');
+}
+
+/* Кто мы? */
+.fourth .card-image {
+  background-image: url('../img/cheerful-man-showing-draft-woman.jpg');
+}
+
+/* О Умном Доме */
+.sixth .card-image {
+  background-image: url('../img/home-climate-control-system-1.jpg');
+}
+
+/* Проект «Создать умный дом» */
+.eigth .card-image {
+  background-image: url('../img/digital-tablet-screen-with-smart-home-controller.jpg');
+}

@@ -1,0 +1,174 @@
+/* Footer */
+.footer {
+  background-color: #15212c;
+  /* Тёмный фон */
+  color: #fff;
+  display: flex;
+  flex-flow: column wrap;
+}
+.footer .card-button {
+  border-radius: 15% / 50%;
+}
+.footer img {
+  height: 2.3rem;
+  width: 2.3rem;
+  border-radius: 50%;
+  background-color: #f5f9fa;
+  overflow: visible;
+}
+.footer hr {
+  width: 95%;
+  height: .2rem;
+  background-color: #585a5d;
+  margin: 0 auto;
+  border: none;
+  border-radius: .1rem;
+  opacity: .8;
+}
+/* Общий стиль для блоков */
+.footer-block {
+  padding: 4vw;
+  flex: 1 0;
+  min-width: 300px;
+  /* Минимальная ширина для адаптивности */
+}
+
+/* Первый блок: Готовы начать? */
+.footer-cta, .footer-info-line {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #b0c4de;
+}
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+  color: #b0c4de;
+  white-space: nowrap;
+}
+
+.footer-cta-content {
+  flex: 2;
+}
+
+.footer-title {
+  margin-bottom: 10px;
+  color: #e7edef;
+}
+
+.footer-description {
+  color: #cfd6d9;
+  /* Светлее для описания */
+}
+
+.footer-button {
+  flex: 1;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4% / 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.footer-button:hover {
+  background-color: #2980b9;
+}
+
+/* Второй блок: Ссылки */
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.footer-links-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  min-width: 200px;
+}
+
+.footer-links-title {
+  margin-bottom: 15px;
+  font-family: Sans-Serif;
+  font-weight: 500;
+  color: #e7edef;
+}
+
+.footer-links-item ul {
+  margin-left: 1rem;
+  list-style: none;
+}
+
+.footer-links-item li {
+  margin-bottom: 10px;
+}
+
+.footer-links-item a, .footer-info-line a {
+  white-space: nowrap;
+  color: #cfd6d9;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links-item a:hover {
+  color: #fff;
+}
+
+.flex {
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+}
+
+/* Третий блок: uncopy */
+.footer-uncopy {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-uncopy p {
+  color: #b0c4de;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 15px;
+  }
+  .footer .card-button {
+    border-radius: 8% / 50%;
+  }
+  
+  .footer-block {
+    min-width: 100%;
+  }
+  
+  .footer-cta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .footer-links {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  
+  .footer-links-item {
+    min-width: 100%;
+  }
+  
+  .footer-button {
+    width: 100%;
+    text-align: center;
+  }
+}
