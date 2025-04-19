@@ -75,7 +75,7 @@ export default function carouselList(
     });
 
     // Отключаем кнопки во время прокрутки
-    let isScrolling: NodeJS.Timeout | undefined;
+    let isScrolling: ReturnType<typeof setTimeout> | undefined;
     servicesList.addEventListener('scroll', () => {
         controls.prev.disabled = true;
         controls.next.disabled = true;
