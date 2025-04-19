@@ -100,7 +100,7 @@ export default function animateCounter(element: HTMLElement, options: AnimateCou
   let initialHiddenSide: 'top' | 'bottom' | 'left' | 'right' | null = null;
   let lastHiddenSide: 'top' | 'bottom' | 'left' | 'right' | null = null;
   let currentValue: number = startValue;
-  let animationInterval: NodeJS.Timeout | null = null;
+  let animationInterval: ReturnType<typeof setTimeout> | null = null;
   let lastIntersectionRatio: number = 0;
 
   // === Определение контейнера прокрутки ===
